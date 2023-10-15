@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author cedec
+ *
+ */
+module tests {
+}

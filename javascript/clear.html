@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+    <title>bonjour tout le monde !</title>
+<script language= "Javascript" type = "text/Javascript">
+    var originaldata;
+    window.onload =function(){
+var field = document.forms[0].elements["textfield"];
+originaldata = field.value;
+if (field.createTextRange){
+var range =field.createTextRange();
+range.moveStart("character",.0);
+range.moveEnd("character",field.value.length-1);
+
+range.select();}
+else if (field.setSelectionRange){
+field.setSelectionRange(0,field.value.length);
+}
+field.focus();
+field.onclick =function (){
+    if (this.value == originaldata){
+        this.value ="";
+    }};}
+
+</script>
+<form>
+<input type ="text" name ="textfield" value ="&lt;Entrez une info ici &gt;" />
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    }

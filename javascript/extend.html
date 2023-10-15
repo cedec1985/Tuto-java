@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <title>bonjour tout le monde !</title>
+<script language= "Javascript" type = "text/Javascript">
+    function isLeapYear(){
+        var y = this.getFullYear();
+        return (y%4 ==0 && (y %100 !=0 || y%400 ==0));
+    }    
+Date.prototype.isLeapYear = isLeapYear;
+var d = new Date();
+window.alert(d.isLeapYear());
+</script>
+
+
+    

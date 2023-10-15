@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+  <title>Bonjour, HTML !</title>
+  <script src ="jusquedix.js">
+  </script>
+</head>
+<body onload="countToTen();">
+  <h1>Apprenons à compter jusqu'à 10 avec JavaScript!</h1>
+  <p id="theCount"></p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+<title>bonjour tout le monde !</title>
+<script language= "Javascript" type = "text/Javascript">
+function checkform(f){
+for (var i=0;f.elements["colors"].length;i++){
+    var radio =f.elements["colors"][i];
+    if (radio.checked){
+        return true; 
+    }}
+window.alert("pas de couleur sélectionnée");
+f.elements["colors"][0].focus();
+return false;
+}
+</script>
+<form onsubmit="return checkform(this);">
+<input type ="radio" name ="colors" value ="R" />red <br />
+<input type ="radio" name ="colors" value ="G" />green <br />
+<input type ="radio" name ="colors" value ="B" />blue <br />
+</form>
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+</script>

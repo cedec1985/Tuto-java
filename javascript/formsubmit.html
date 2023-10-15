@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <title>bonjour tout le monde !</title>
+<script language= "Javascript" type = "text/Javascript">
+    function checkKey(e){
+        var key;
+    if (window.event){
+        key =window.event.KeyCode;
+    }   else{
+        key = e.KeyCode;
+    }
+    if (key ==13){
+        document.forms[0].submit();
+    }
+    }
+window.onload = function () {
+    document.forms[0].element["field"].onkeydown = checkKey;
+}
+</script>
+<form>
+<input name ="field" type ="text" />
+</form>
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <title>bonjour tout le monde !</title>
+<script language= "Javascript" type = "text/Javascript">
+function validate(field){
+    var regex = /^\d{5}$/;
+if (!regex.test(field.value)){
+window.alert("code postal invalide");
+field.value="";
+field.focus();
+    }}
+</script>
+<form onsubmit ="return checkform(this);">
+ US postal code <input type ="text" name ="code"  onblur ="validate(this);" />
+</form>
+
+
+
+
+
+

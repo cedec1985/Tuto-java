@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <title>bonjour tout le monde !</title>
+<script language= "Javascript" type = "text/Javascript">
+var newwin = window.open("http://www.amazon.com/", "samsWindow", "");
+newwin.document.write("<body></body>");
+
+var windowwidth, windowheight;
+if (window.innerWidth){
+    windowwidth =newwin.outerwidth;
+    windowheight =newwin.outerheight;
+}   else{
+    windowwidth= newwin.document.body.clientWidth;
+    windowheight= newwin.document.body.clientHeight;
+}
+var screenwidth = screen.availWidth;
+var screenheight= screen.availHeight;
+newwin.moveto(
+    Math.round((screenwidth -windowwidth)/2),
+    Math.round((screenheight -windowheight)/2));
+newwin.location.href ="http://www.amazon.com/";
+</script>
+<body></body>

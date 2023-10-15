@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <title>bonjour tout le monde !</title>
+<script language= "Javascript" type = "text/Javascript">
+    function UniversalCounter(){
+        this.copyright ="(C) 2006 Javascript Phrasebook";
+        this.Count=count;
+        var numbers ={
+            "en" : "one, two, three",
+            "fr" :"un, deux, trois",
+            "de" : "eins, zwei, drei"};
+    function count (language){
+        if (numbers[language]){
+            window.alert(numbers[language]);
+        }    
+            else{
+            window.alert("langage inconnu");
+        }
+    }
+    }
+var uc =new UniversalCounter();
+uc.Count("fr");
+</script>
+
+
+
+
+
+
+
+    

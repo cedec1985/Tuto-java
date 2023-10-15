@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <title>bonjour tout le monde !</title>
+<script language= "Javascript" type = "text/Javascript">
+    function eventHandler(){
+        window.alert("event fired !");
+    }
+window.onload = function (){
+var button = document.getElementById("eventbutton");
+if (button.addEventListener){
+    button.addEventListener("click", eventHandler, false);
+}else if (button.attachEvent){
+    button.attachEvent("onclick", eventHandler);
+}
+};
+</script>
+<input type ="button" id ="eventbutton" value = "Click me !" />
+
+
+
+
+
+
+
+
+
+
+
+    
