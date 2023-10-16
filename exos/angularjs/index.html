@@ -32,14 +32,14 @@
         </select>
     {{$ctrl.orderProp}}
       </p>
-<phone-list></phone-list>
+
       <ul class="phones">
         <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp">
           <span>{{phone.name}}</span>
           <p>{{phone.snippet}}</p>
         </li>
       </ul>
-
+<phone-list></phone-list>
     </div>
   </div>
 </div>
