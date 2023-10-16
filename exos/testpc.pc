@@ -1,0 +1,14 @@
+Algorithme testpc
+DEBUT
+    Variable nombre
+     : Entier
+    Variable nombre2 : Reel
+    Variable chaine : Chaine
+SI nombre < 10 ALORS
+Lire(nombre)
+    Ecrire(le chiffre est inferieur a 10)
+SINON
+    lire(nombre)
+    Ecrire(le chiffre est superieur a 10)
+FINSI
+FIN
