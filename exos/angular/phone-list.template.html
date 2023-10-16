@@ -4,7 +4,7 @@
   <meta charset="utf-8"></meta-charset>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" ></script>
   <script src="app.js" ></script>
-  <script src="phone-list.component1.js"></script>
+  <script src="phone-list.component2.js"></script>
 </head>
 <body ng-controller="PhoneListController">
     <ul>
@@ -21,6 +21,15 @@
       Search: <input ng-model="$ctrl.query" />
     {{$ctrl.query}}
     </div>
+    <ul class="phones">
+      <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+      <a href="/#/phones/{{phone.id}}" class="thumb">
+      <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
+      </a>
+      <a href="/#/phones/{{phone.id}}">{{phone.name}}</a>
+      <p>{{phone.snippet}}</p>
+      </li>
+      </ul>
     <p>
         Sort by:
         <select ng-model="$ctrl.orderProp">

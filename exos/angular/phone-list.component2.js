@@ -20,7 +20,7 @@ angular.
         var self = this;
         self.orderProp = 'age';
 
-        $http.get('/exos/angular/phones.json').then(function(response) {
+        $http.get('http://127.0.0.1:5500/phones.json').then(function(response) {
           self.phones = response.data.slice(0,5);
         });
     }
