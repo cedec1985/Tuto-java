@@ -38,15 +38,6 @@
         </li>
       </ul>
 <phone-list></phone-list>
-<ul class="phones">
-  <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
-    <a href="exos/angular/{{phone.id}}" class="thumb">
-      <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
-    </a>
-    <a href="exos/angular/{{phone.id}}">{{phone.name}}</a>
-    <p>{{phone.snippet}}</p>
-  </li>
-</ul>
     </div>
   </div>
 </div>
