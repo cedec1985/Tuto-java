@@ -13,7 +13,7 @@ angular.
         self.orderProp = 'age';
 
         $http.get('angularjs/phones.json').then(function(response) {
-          self.phones = response.data;
+          self.phones = response.data.slice(0,5);
         });
     }
   });
