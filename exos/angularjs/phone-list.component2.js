@@ -7,7 +7,7 @@ angular.
         var self = this;
         self.orderProp = 'age';
 
-        $http.get('phones/phones.json').then(function(response) {
+        $http.get('angularjs/phones.json').then(function(response) {
           self.phones = response.data;
         });
       }
