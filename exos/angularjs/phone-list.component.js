@@ -25,5 +25,4 @@ angular.
       ];
       this.orderProp = 'age';
     }
-
   });

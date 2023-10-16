@@ -7,7 +7,7 @@ angular.
       '<p>{{phone.snippet}}</p>' +
     '</li>' +
   '</ul>',
-    controller: ['$http',
+    controller: 
       function PhoneListController($http) {
         var self = this;
         self.orderProp = 'age';
@@ -15,6 +15,5 @@ angular.
         $http.get('angularjs/phones.json').then(function(response) {
           self.phones = response.data;
         });
-      }
-    ]
+    }
   });
