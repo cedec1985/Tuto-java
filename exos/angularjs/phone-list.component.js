@@ -8,10 +8,10 @@ angular.
     '</li>' +
   '</ul>' + '<ul class="phones">' +
   '<li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">' +
-    '<a href="!#/angularjs/{{phone.id}}" class="thumb">' +
-      '<img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />'+
+    '<a href="angularjs/{{phone.id}}" class="thumb">' +
+      '<img ng-src="angularjs/{{{phone.imageUrl}}" alt="{{phone.name}}" />'+
     '</a>' +
-    '<a href="!#/angularjs/{{phone.id}}">{{phone.name}}</a>'+
+    '<a href="angularjs/{{phone.id}}">{{phone.name}}</a>'+
     '<p>{{phone.snippet}}</p>'+
   '</li>' +
 '</ul>',
