@@ -1,7 +1,12 @@
 angular.
   module('phoneList').
   component('phoneList', {
-    templateUrl: 'phone-list/phone-list.template.html',
+    template:  '<ul>' +
+    '<li ng-repeat="phone in $ctrl.phones">' +
+      '<span>{{phone.name}}</span>' +'<p>Total number of phones: {{$ctrl.phones.length}}</p>' +
+      '<p>{{phone.snippet}}</p>' +
+    '</li>' +
+  '</ul>',
     controller: ['$http',
       function PhoneListController($http) {
         var self = this;
