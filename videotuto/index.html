@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" ng-app="videotuto">
+  <head>
+    <meta charset="utf-8">
+<script src="videotuto/controller/comments.js"></script>
+<script src="videotuto/controller/posts.js"></script>
+<script src="videotuto/service/post.js"></script>
+<script src="videotuto/directive/comment.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+
+</head>
+<body>
+      <div ng-view></div>
+<div>
+    <div ng-repeat="post in posts">
+        <h1>{{ post.name }}</h1>
+        <p>{{ post.content}}</p>
+        <p><a href="#/comments/{{ post.id }}">{{ post.comments.length }} Commentaires</a></p>
+    </div>
+
+</div>
+  </body>
+</html>
+
+
+
+
+
