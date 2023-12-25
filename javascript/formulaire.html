@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Indice de masse corporelle</title>
+      <meta charset="UTF-8">
+      <link  rel ="stylesheet" href= "css2.css">
+      <style>
+        .my-form {
+          transition:all linear 0.5s;
+          background: transparent;
+          border: 25px solid greenyellow;
+          border-radius:0.8mm;
+          margin:4cm 4cm 4cm 4cm;
+          padding:40px 40px 40px 40px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+       </style>
+      <script>
+         function calculerBMI()
+            {
+            var taille=document.getElementById("taille").value;
+            var poids=document.getElementById("poids").value;
+         
+
+            taille = taille/100;
+            var bmi = poids / (taille * taille);
+
+            var div = document.getElementById("bmi");
+            while (div.firstChild!=null) div.removeChild(div.firstChild);
+            div.appendChild(document.createTextNode("Votre indice de masse corporelle est de "+bmi)); 
+            }
+      </script>
+   </head>
+   <body>
+    <form id="formStudentData" text-align="center" name="myForm"  class="my-form">
+
+        <h1 class="inscription">Inscrivez-vous</h1>
+        
+        <label for="name">votre nom:<span class="req" required>*</span>  </label><input type="text" id="nom" placeholder="votre nom" name="input" required>
+        <br>
+      
+        <label for="phone">votre poids:  </label><input type="tel" id="poids">
+        <br>
+      
+        <label for="email">votre taille:  <span class="req" required>*</span> </label><input type="text" id ="taille" placeholder="hotmail" required>
+        <br>
+      
+        <input type="submit" value="calculer" onclick="calculerBMI(); return false">
+        <div id="bmi"></div>
+    </form>
+   </body>
+</html>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Facturation</title>
+      <meta charset="UTF-8">
+      <style>
+         table {
+             border-collapse: separate;
+             border-spacing: 0px;
+            }
+         tr.empty {
+            }
+         tr.title {
+            background-color: #333333; 
+            color: #ffffff;
+            font-weight: bold;
+            }
+         tr.subtitle {
+            background-color: #dddddd;
+           }
+         td {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 14pt;
+            padding: 6px;
+            padding-right: 12px;
+            border-bottom-style: solid;
+            border-bottom-color: #333333;
+            border-bottom-width: 1px;
+            }
+	   tr.empty td {
+            border-bottom-style: none;
+            border-bottom-width: 0px; 
+            height: 40px;
+            }
+
+      </style>
+      <script charset="UTF-8">
+        var factures = [
+            [ "Jean Laplace",  "12/12/2015", [ [ "Lampe à huile", 1, 21, 52.5 ], [ "Huile 1L", 10, 21, 2.5 ] ] ],
+            [ "Pierre Dupont", "13/12/2015", [ [ "Vélo pour dame", 1, 21, 443.99 ] ] ],
+            [ "Amélie Donna",  "13/12/2015", [ [ "Vélo pour dame", 1, 21, 443.99 ], [ "Huile 1L", 5, 21, 2.5 ], [ "Agrafeuse", 1, 6, 10.8 ], [ "Agrafes boite de 1000", 4, 6, 5.99 ] ] ],
+            [ "Paul Delville", "15/12/2015", [ [ "Agrafes boite de 1000", 10, 6, 5.99 ] ] ]
+            ];
+      </script>
+      <script src="facturation.js" charset="UTF-8"></script>
+   </head>
+   <body onload="start()">
+      <main>
+         <table id="factures"></table>
+      </main>
+   </body>
+</html>
